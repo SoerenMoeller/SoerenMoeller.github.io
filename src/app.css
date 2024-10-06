@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .gray {
+      background-color: #f8f8f8;
+    }
+
+    .dark-gray {
+      background-color: #343a40;
+    }
+
+    .mint {
+      background-color: #d1e7dd;
+    }
+
+    .mint-text {
+      color: #d1e7dd;
+    }
+
+    .gray-text {
+      color: #f8f8f8;
+    }
+
+    .dark-gray-text {
+      color: #343a40;
+    }
+}
+
+@layer base {
+    section,
+    header {
+      @apply px-4 lg:px-16;
+    }
+}
